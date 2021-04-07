@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/anh_nen_3"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="98dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sofia_pro"
+            android:text="Sign Up"
+            android:textColor="#111719"
+            android:textSize="36sp"
+            tools:ignore="HardcodedText,InvalidId,MissingConstraints">
+        </TextView>
+        <TextView
+            android:id="@+id/r2"
+            android:layout_below="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:text="Full name"
+            android:textColor="#9796A1"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,InvalidId,MissingConstraints">
+        </TextView>
+        <EditText
+            android:id="@+id/r3"
+            android:layout_below="@+id/r2"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="10dp"
+            android:layout_height="65dp"
+            android:background="@drawable/border_orange"
+            android:fontFamily="@font/sofia_pro"
+            android:hint="Your name"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColorHint="#C4C4C4"
+            tools:ignore="HardcodedText"
+            >
+
+        </EditText>
+        <TextView
+            android:id="@+id/r4"
+            android:layout_below="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:text="E-mail"
+            android:textColor="#9796A1"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,InvalidId,MissingConstraints">
+        </TextView>
+        <EditText
+            android:id="@+id/r5"
+            android:layout_below="@+id/r4"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="10dp"
+            android:layout_height="65dp"
+            android:background="@drawable/border_empty"
+            android:fontFamily="@font/sofia_pro"
+            android:hint="Your email or phone"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColorHint="#C4C4C4"
+            tools:ignore="HardcodedText"
+            >
+
+        </EditText>
+        <TextView
+            android:id="@+id/r6"
+            android:layout_below="@+id/r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:text="Password"
+            android:textColor="#9796A1"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,InvalidId,MissingConstraints">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/r7"
+            android:layout_below="@+id/r6"
+            android:layout_width="match_parent"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#C4C4C4"
+            app:hintAnimationEnabled="false"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="10dp"
+                android:layout_height="65dp"
+                android:inputType="textPassword"
+                android:background="@drawable/border_empty"
+                android:fontFamily="@font/sofia_pro"
+                android:hint="Password"
+                android:textColorHint="#C4C4C4"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                 />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/r8"
+            android:layout_below="@+id/r7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="44dp"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:text="Sign In"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:cornerRadius="32dp"
+            tools:ignore="HardcodedText">
+
+        </Button>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/r9"
+            android:layout_below="@+id/r8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="Already have an account? "
+                android:textColor="#5B5B5E"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:paddingHorizontal="0dp"
+                android:paddingVertical="0dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#FE724C"
+                android:textSize="14sp"
+                android:id="@+id/dangnhap">
+
+            </Button>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#80B3B3B3">
+
+            </View>
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="sign in with"
+                android:textAllCaps="false"
+                android:textColor="#5B5B5E"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#80B3B3B3">
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_below="@+id/l1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="15dp"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/facebook"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="FACEBOOK"
+                android:textColor="#111719"
+                android:textSize="13sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="32dp"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText,RtlHardcoded">
+
+            </Button>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/google"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="Google  "
+                android:textColor="#111719"
+                android:textSize="13sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="32dp"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText,RtlHardcoded">
+
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

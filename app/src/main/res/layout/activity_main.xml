@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+
+
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="32dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Welcome"
+            android:id="@+id/a1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Onboarding one"
+            android:id="@+id/a2"
+            android:layout_below="@+id/a1"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="SignUp"
+            android:id="@+id/a3"
+            android:layout_below="@+id/a2"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Login"
+            android:id="@+id/a4"
+            android:layout_below="@+id/a3"
+            android:layout_marginTop="20dp"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Verification Code"
+            android:id="@+id/a5"
+            android:layout_below="@+id/a4"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group 12"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/a5"
+            android:id="@+id/a6"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
